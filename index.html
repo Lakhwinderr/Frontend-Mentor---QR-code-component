@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | QR code component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      :root {
+        --slate300: hsl(212, 45%, 89%);
+        --slate500: hsl(216, 15%, 48%);
+        --slate900: hsl(218, 44%, 22%);
+        --round10: 10px;
+      }
+
+      .slate300{
+        color: var(--slate300);
+      }
+      .slate500{
+        color: var(--slate500);
+      }
+      .slate900{
+        color: var(--slate900);
+      }
+      body {
+        font-size: 15px;
+        background-color: var(--slate300);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      .outfit-400 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+      }
+      .outfit-700 {
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+      }
+      .round10 {
+        border-radius: var(--round10);
+      }
+      .card {
+        background-color: white;
+        
+        height: fit-content;
+        width: 300px;
+        padding: 10px;
+        text-align: center;
+    
+        margin: 20px auto;
+        
+      }
+      img {
+        height: 300px;
+        width: 100%;
+        
+        background-color: blue;
+
+      }
+      #text{
+        padding: 10px;
+      }
+
+
+    </style>
+  </head>
+  <body class="slate900">
+    <div class="card round10">
+      <img class = "round10" src="./images/image-qr-code.png" alt="" />
+      <div id="text">
+        <h2 class="outfit-700 slate900">Improve your front-end skills by building projects.</h2>
+        <p class="outfit-400 slate500">
+          Scan the QR code to visit the Frontend Mentor and take your coding
+          skills to the next level.
+        </p>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a target="_blank" href="https://lakhwinder.netlify.app/">Lakhwinder Singh</a>.
+    </div>
+  </body>
+</html>
